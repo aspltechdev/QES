@@ -1,0 +1,636 @@
+/* =========================================================
+   INDUSTRIES PAGE
+========================================================= */
+
+.industries-page {
+  width: 100%;
+  background: #f7f7f7;
+  color: #111827;
+}
+
+.industries-container {
+  width: min(1120px, calc(100% - 70px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.industries-hero {
+  position: relative;
+
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(3, 15, 24, 0.55),
+      rgba(3, 15, 24, 0.22)
+    ),
+    url("../../assets/industrieshero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+.industries-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.08),
+      rgba(0, 0, 0, 0.28)
+    );
+}
+
+.industries-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(1000px, calc(100% - 60px));
+
+  margin-top: 60px;
+
+  text-align: center;
+}
+
+.industries-hero-content > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: 9px;
+  font-weight: 500;
+
+  letter-spacing: 2.2px;
+}
+
+.industries-hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(40px, 4vw, 58px);
+  line-height: 1.12;
+
+  font-weight: 700;
+
+  letter-spacing: -1.3px;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.industries-intro {
+  padding: 65px 0 55px;
+
+  text-align: center;
+
+  background: #ffffff;
+}
+
+.industries-intro span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #667085;
+
+  font-size: 8px;
+  font-weight: 500;
+
+  letter-spacing: 1.8px;
+}
+
+.industries-intro h2 {
+  margin: 0;
+
+  color: #172138;
+
+  font-size: 34px;
+  line-height: 1.1;
+
+  font-weight: 700;
+}
+
+.industries-intro h2 strong {
+  color: #ff6259;
+  font-weight: 600;
+}
+
+.industries-intro p {
+  max-width: 650px;
+
+  margin: 14px auto 0;
+
+  color: #667085;
+
+  font-size: 12px;
+  line-height: 1.65;
+
+  font-weight: 300;
+}
+
+
+/* =========================================================
+   INDUSTRY LIST
+========================================================= */
+
+.industries-list {
+  padding: 25px 0 75px;
+
+  background: #f7f7f7;
+}
+
+
+/* =========================================================
+   INDUSTRY CARD
+========================================================= */
+
+.industry-row {
+  min-height: 310px;
+
+  margin-bottom: 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    0.95fr 1.25fr;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+.industry-row-reverse {
+  grid-template-columns:
+    1.25fr 0.95fr;
+}
+
+.industry-row-reverse .industry-row-image {
+  order: 2;
+}
+
+.industry-row-reverse .industry-row-content {
+  order: 1;
+}
+
+
+/* =========================================================
+   INDUSTRY IMAGE
+========================================================= */
+
+.industry-row-image {
+  min-height: 310px;
+}
+
+.industry-row-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   INDUSTRY CONTENT
+========================================================= */
+
+.industry-row-content {
+  padding: 38px 42px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+/* CATEGORY */
+
+.industry-row-content > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #ff6259;
+
+  font-size: 9px;
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+
+/* INDUSTRY TITLE */
+
+.industry-row-content h3 {
+  margin: 0;
+
+  color: #0f1a31;
+
+  font-size: 16px;
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: 0;
+}
+
+
+/* DESCRIPTION */
+
+.industry-row-content > p {
+  max-width: 620px;
+
+  margin: 11px 0 18px;
+
+  color: #0f1a31;
+
+  font-size: 15px;
+  line-height: 24px;
+
+  font-weight: 300;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   APPLICATION FEATURES
+========================================================= */
+
+.industry-applications {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 9px 18px;
+
+  margin-bottom: 22px;
+}
+
+.industry-applications div {
+  display: flex;
+  align-items: center;
+
+  min-width: 0;
+
+  gap: 7px;
+
+  color: #4b5563;
+
+  font-size: 10px;
+  line-height: 1.35;
+
+  font-weight: 400;
+}
+
+.industry-applications b {
+  width: 15px;
+  height: 15px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid #ff6259;
+  border-radius: 50%;
+
+  color: #ff6259;
+
+  font-size: 7px;
+  line-height: 1;
+}
+
+
+/* =========================================================
+   INDUSTRY BUTTON
+========================================================= */
+
+.industry-row-content > a {
+  width: fit-content;
+
+  min-width: 190px;
+  min-height: 38px;
+
+  padding: 0 22px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  border-radius: 5px;
+
+  background: #ff6259;
+  color: #ffffff;
+
+  font-size: 9px;
+  line-height: 1;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.industry-row-content > a:hover {
+  background: #ed554d;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.industries-cta {
+  position: relative;
+
+  min-height: 230px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(238, 78, 67, 0.93),
+      rgba(255, 98, 89, 0.88)
+    ),
+    url("../../assets/herobanner.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+}
+
+.industries-cta-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.industries-cta-inner {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+.industries-cta-inner > div > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+}
+
+.industries-cta h2 {
+  margin: 0 0 12px;
+
+  font-size: 31px;
+  line-height: 1.1;
+}
+
+.industries-cta p {
+  max-width: 650px;
+
+  margin: 0;
+
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.industries-cta a {
+  min-width: 170px;
+  min-height: 42px;
+
+  padding: 0 20px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  flex-shrink: 0;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #111827;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.industries-cta a:hover {
+  background: #f3f4f6;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   DATABASE INDUSTRY PLACEHOLDER
+========================================================= */
+
+.industry-image-placeholder {
+  width: 100%;
+  height: 100%;
+
+  min-height: 310px;
+
+  display: grid;
+
+  place-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #101b34,
+      #243555
+    );
+
+  color: #ffffff;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .industries-container {
+    width: calc(100% - 40px);
+  }
+
+  .industry-row,
+  .industry-row-reverse {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .industry-row-content {
+    padding: 32px;
+  }
+
+  .industry-row-content h3 {
+    font-size: 16px;
+  }
+
+  .industry-row-content > p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  .industry-applications {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .industries-container {
+    width: calc(100% - 28px);
+  }
+
+  .industries-hero {
+    min-height: 430px;
+
+    background-position: center;
+  }
+
+  .industries-hero-content {
+    width: calc(100% - 30px);
+
+    margin-top: 50px;
+  }
+
+  .industries-hero-content h1 {
+    font-size: 34px;
+  }
+
+  .industries-intro h2 {
+    font-size: 29px;
+  }
+
+  .industries-intro p {
+    font-size: 11px;
+  }
+
+  .industry-row,
+  .industry-row-reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-row-reverse .industry-row-image,
+  .industry-row-reverse .industry-row-content {
+    order: initial;
+  }
+
+  .industry-row-image {
+    min-height: 260px;
+  }
+
+  .industry-row-content {
+    padding: 30px 24px;
+  }
+
+  .industry-row-content > span {
+    font-size: 8px;
+  }
+
+  .industry-row-content h3 {
+    font-size: 18px;
+  }
+
+  .industry-row-content > p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  .industry-applications {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-applications div {
+    font-size: 10px;
+  }
+
+  .industries-cta {
+    padding: 50px 0;
+  }
+
+  .industries-cta-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .industries-cta h2 {
+    font-size: 27px;
+  }
+}

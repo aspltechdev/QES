@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap");
+
+@import "tailwindcss";
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+  min-height: 100vh;
+
+  font-family:
+    "Bricolage Grotesque",
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-weight: 400;
+
+  background: #ffffff;
+  color: #0f1a31;
+
+  overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   FORM ELEMENTS
+========================================================= */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* =========================================================
+   BUTTON RESET
+========================================================= */
+
+button {
+  border: 0;
+  outline: none;
+}
+
+
+/* =========================================================
+   IMAGES
+========================================================= */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    "Bricolage Grotesque",
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  color: inherit;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+p,
+span,
+a,
+button,
+input,
+textarea,
+select {
+  font-family:
+    "Bricolage Grotesque",
+    Arial,
+    Helvetica,
+    sans-serif;
+}

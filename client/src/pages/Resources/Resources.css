@@ -1,0 +1,603 @@
+/* =========================================================
+   RESOURCES / DOWNLOAD PAGE
+========================================================= */
+
+.resources-page {
+  width: 100%;
+  background: #ffffff;
+  color: #0f1a31;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.resources-container {
+  width: min(1200px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.resources-hero {
+  position: relative;
+
+  min-height: 410px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(5, 10, 18, 0.62),
+      rgba(5, 10, 18, 0.28)
+    ),
+    url("../../assets/downloadhero.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+.resources-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.08),
+      rgba(0, 0, 0, 0.3)
+    );
+}
+
+.resources-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(1100px, calc(100% - 60px));
+
+  margin-top: 55px;
+
+  text-align: center;
+}
+
+.resources-hero-content span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  letter-spacing: 2.2px;
+}
+
+.resources-hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 1.08;
+
+  font-weight: 700;
+
+  letter-spacing: -1.3px;
+}
+
+
+/* =========================================================
+   DOWNLOAD SECTION
+========================================================= */
+
+.resources-download-section {
+  padding: 80px 0 95px;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.resources-heading {
+  margin-bottom: 65px;
+
+  text-align: center;
+}
+
+.resources-heading > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #53627a;
+
+  font-size: 10px;
+  line-height: 1;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.resources-heading h2 {
+  margin: 0;
+
+  color: #0f1a31;
+
+  font-size: 40px;
+  line-height: 1.12;
+
+  font-weight: 500;
+
+  letter-spacing: -0.7px;
+}
+
+.resources-heading h2 strong {
+  color: #ff6259;
+
+  font-weight: 600;
+}
+
+.resources-heading p {
+  max-width: 760px;
+
+  margin: 17px auto 0;
+
+  color: #0f1a31;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  font-weight: 300;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.resources-status {
+  margin-bottom: 25px;
+
+  padding: 15px;
+
+  border-radius: 7px;
+
+  background: #f8fafc;
+  color: #64748b;
+
+  text-align: center;
+
+  font-size: 12px;
+}
+
+.resources-status-error {
+  border: 1px solid #fecaca;
+
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+
+/* =========================================================
+   DOWNLOAD CONTENT LAYOUT
+========================================================= */
+
+.resources-download-layout {
+  display: grid;
+
+  grid-template-columns:
+    420px minmax(0, 1fr);
+
+  gap: 65px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   PREVIEW IMAGE
+========================================================= */
+
+.resources-preview-image {
+  width: 100%;
+  height: 440px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  background: #e5e7eb;
+}
+
+.resources-preview-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   DOWNLOAD LIST
+========================================================= */
+
+.resources-download-list {
+  width: 100%;
+}
+
+.resource-download-item {
+  width: 100%;
+
+  min-height: 92px;
+
+  padding: 19px 5px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  box-sizing: border-box;
+
+  border-bottom:
+    1px solid #dfe4ea;
+
+  color: #111827;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    padding 0.2s ease;
+}
+
+.resource-download-item:hover {
+  padding-left: 10px;
+
+  background: #fff8f7;
+}
+
+
+/* =========================================================
+   DOWNLOAD TYPE
+========================================================= */
+
+.resource-type {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #ff6259;
+
+  font-size: 10px;
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   DOWNLOAD TITLE
+========================================================= */
+
+.resource-download-item h3 {
+  margin: 0 0 8px;
+
+  color: #000000;
+
+  font-size: 18px;
+  line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   DOWNLOAD DESCRIPTION
+========================================================= */
+
+.resource-download-item p {
+  max-width: 640px;
+
+  margin: 0;
+
+  color: #0f1a31;
+
+  font-size: 16px;
+  line-height: 22px;
+
+  font-weight: 400;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   DOWNLOAD ARROW
+========================================================= */
+
+.resource-download-icon {
+  width: 35px;
+  height: 35px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #ff6259;
+
+  font-size: 26px;
+  line-height: 1;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.resources-cta {
+  position: relative;
+
+  min-height: 220px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(238, 78, 67, 0.94),
+      rgba(255, 98, 89, 0.88)
+    ),
+    url("../../assets/herobanner.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+}
+
+.resources-cta-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.resources-cta-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+.resources-cta-content > div > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 9px;
+
+  letter-spacing: 1.6px;
+}
+
+.resources-cta h2 {
+  margin: 0 0 10px;
+
+  font-size: 31px;
+  line-height: 1.12;
+
+  font-weight: 600;
+}
+
+.resources-cta p {
+  max-width: 620px;
+
+  margin: 0;
+
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.resources-cta a {
+  min-width: 135px;
+  min-height: 40px;
+
+  padding: 0 20px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #111827;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1500px) {
+
+  .resources-container {
+    width: min(1320px, calc(100% - 100px));
+  }
+
+  .resources-heading h2 {
+    font-size: 42px;
+  }
+
+  .resources-download-layout {
+    grid-template-columns:
+      450px minmax(0, 1fr);
+
+    gap: 75px;
+  }
+
+  .resources-preview-image {
+    height: 470px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .resources-container {
+    width: calc(100% - 40px);
+  }
+
+  .resources-download-layout {
+    grid-template-columns:
+      360px minmax(0, 1fr);
+
+    gap: 35px;
+  }
+
+  .resources-preview-image {
+    height: 390px;
+  }
+
+  .resources-heading h2 {
+    font-size: 36px;
+  }
+
+  .resource-download-item h3 {
+    font-size: 16px;
+  }
+
+  .resource-download-item p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .resources-container {
+    width: calc(100% - 28px);
+  }
+
+  .resources-hero {
+    min-height: 360px;
+  }
+
+  .resources-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .resources-download-section {
+    padding: 60px 0 70px;
+  }
+
+  .resources-heading {
+    margin-bottom: 40px;
+  }
+
+  .resources-heading h2 {
+    font-size: 30px;
+  }
+
+  .resources-heading p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .resources-download-layout {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .resources-preview-image {
+    height: 330px;
+  }
+
+  .resource-download-item {
+    min-height: 85px;
+
+    padding: 16px 3px;
+  }
+
+  .resource-type {
+    font-size: 9px;
+  }
+
+  .resource-download-item h3 {
+    font-size: 16px;
+  }
+
+  .resource-download-item p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .resource-download-icon {
+    font-size: 22px;
+  }
+
+  .resources-cta {
+    padding: 50px 0;
+  }
+
+  .resources-cta-content {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .resources-cta h2 {
+    font-size: 26px;
+  }
+}

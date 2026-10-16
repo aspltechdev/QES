@@ -1,0 +1,762 @@
+/* =========================================================
+   GALLERY PAGE
+========================================================= */
+
+.gallery-page {
+  width: 100%;
+  background: #ffffff;
+  color: #111827;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.gallery-container {
+  width: min(1120px, calc(100% - 70px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.gallery-hero {
+  position: relative;
+
+  min-height: 390px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(5, 9, 15, 0.66),
+      rgba(5, 9, 15, 0.26)
+    ),
+    url("../../assets/galleryhero.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+.gallery-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.08),
+      rgba(0, 0, 0, 0.34)
+    );
+}
+
+.gallery-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(1000px, calc(100% - 60px));
+
+  margin-top: 55px;
+
+  text-align: center;
+}
+
+.gallery-hero-content span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+
+  letter-spacing: 2px;
+}
+
+.gallery-hero-content h1 {
+  margin: 0;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.1;
+
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+
+/* =========================================================
+   SHOWCASE
+========================================================= */
+
+.gallery-showcase {
+  padding: 65px 0 90px;
+
+  background: #ffffff;
+}
+
+.gallery-heading {
+  margin-bottom: 48px;
+
+  text-align: center;
+}
+
+
+/* OUR SHOWCASE */
+
+.gallery-heading > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #0f1a31;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1;
+
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+
+/* PRECISION IN ACTION */
+
+.gallery-heading h2 {
+  margin: 0;
+
+  color: #172138;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.1;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* RED "IN ACTION" */
+
+.gallery-heading h2 strong {
+  color: #ff6259;
+
+  font-weight: 600;
+}
+
+
+/* FIGMA DESCRIPTION
+   Font: Bricolage Grotesque
+   Weight: 300 / Light
+   Size: 16px
+   Line-height: 24px
+*/
+
+.gallery-heading p {
+  width: min(929px, 100%);
+  max-width: 929px;
+
+  margin: 13px auto 0;
+
+  color: #0f1a31;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+
+  letter-spacing: 0;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   GALLERY GRID
+========================================================= */
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(12, minmax(0, 1fr));
+
+  gap: 18px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.gallery-card {
+  position: relative;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  background: #111827;
+
+  box-shadow:
+    0 5px 18px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================================
+   CARD SIZES
+
+   Layout:
+   small + large
+   wide
+   large + small
+   small + small + small
+========================================================= */
+
+.gallery-card-small {
+  grid-column: span 4;
+
+  height: 285px;
+}
+
+.gallery-card-large {
+  grid-column: span 8;
+
+  height: 285px;
+}
+
+.gallery-card-wide {
+  grid-column: span 12;
+
+  height: 300px;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.gallery-card img {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.35s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.035);
+}
+
+
+/* =========================================================
+   DARK OVERLAY
+========================================================= */
+
+.gallery-card-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(5, 8, 13, 0.88) 0%,
+      rgba(5, 8, 13, 0.36) 38%,
+      rgba(5, 8, 13, 0) 70%
+    );
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.gallery-card-content {
+  position: absolute;
+
+  left: 20px;
+  right: 20px;
+  bottom: 18px;
+
+  z-index: 2;
+
+  color: #ffffff;
+}
+
+
+/* CARD CATEGORY */
+
+.gallery-card-category {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #ff6259;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 1.3px;
+
+  text-transform: uppercase;
+}
+
+
+/* CARD TITLE */
+
+.gallery-card-content h3 {
+  margin: 0 0 5px;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 14px;
+  line-height: 1.2;
+
+  font-weight: 700;
+}
+
+
+/* CARD DESCRIPTION */
+
+.gallery-card-content p {
+  max-width: 430px;
+
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.86);
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 9px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   IMAGE PLACEHOLDER
+========================================================= */
+
+.gallery-image-placeholder {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+
+  place-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #101b34,
+      #243555
+    );
+
+  color: #ffffff;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.gallery-status {
+  margin-bottom: 25px;
+
+  padding: 16px;
+
+  border-radius: 7px;
+
+  background: #f8fafc;
+  color: #64748b;
+
+  text-align: center;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 11px;
+}
+
+.gallery-status-error {
+  border: 1px solid #fecaca;
+
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.gallery-cta {
+  position: relative;
+
+  min-height: 220px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(238, 78, 67, 0.94),
+      rgba(255, 98, 89, 0.88)
+    ),
+    url("../../assets/herobanner.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+}
+
+.gallery-cta-overlay {
+  position: absolute;
+
+  inset: 0;
+}
+
+.gallery-cta-inner {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+.gallery-cta-inner > div > span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 8px;
+  font-weight: 400;
+
+  letter-spacing: 1.5px;
+}
+
+.gallery-cta h2 {
+  margin: 0 0 10px;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 31px;
+  font-weight: 600;
+
+  line-height: 1.1;
+}
+
+.gallery-cta p {
+  max-width: 620px;
+
+  margin: 0;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 9px;
+  font-weight: 300;
+
+  line-height: 1.6;
+}
+
+.gallery-cta a {
+  min-width: 150px;
+  min-height: 40px;
+
+  padding: 0 20px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  flex-shrink: 0;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #111827;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.gallery-cta a:hover {
+  background: #f3f4f6;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   FIGMA FIX
+   STEEL FABRICATION + HEAVY ENGINEERING
+========================================================= */
+
+/* 4th card */
+
+.gallery-grid > .gallery-card:nth-child(4) {
+  grid-column: span 8;
+
+  height: 230px;
+}
+
+
+/* 5th card */
+
+.gallery-grid > .gallery-card:nth-child(5) {
+  grid-column: span 4;
+
+  height: 230px;
+}
+
+
+/* Images */
+
+.gallery-grid > .gallery-card:nth-child(4) img,
+.gallery-grid > .gallery-card:nth-child(5) img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* Content */
+
+.gallery-grid > .gallery-card:nth-child(4) .gallery-card-content,
+.gallery-grid > .gallery-card:nth-child(5) .gallery-card-content {
+  left: 18px;
+  right: 18px;
+
+  bottom: 15px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .gallery-container {
+    width: calc(100% - 40px);
+  }
+
+
+  /* SHOWCASE */
+
+  .gallery-showcase {
+    padding: 60px 0 70px;
+  }
+
+  .gallery-heading {
+    margin-bottom: 42px;
+  }
+
+  .gallery-heading h2 {
+    font-size: 30px;
+  }
+
+  .gallery-heading p {
+    width: 100%;
+
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+
+  /* GRID */
+
+  .gallery-card-small,
+  .gallery-card-large {
+    grid-column: span 6;
+
+    height: 270px;
+  }
+
+  .gallery-card-wide {
+    grid-column: span 12;
+
+    height: 290px;
+  }
+
+
+  /* SPECIAL CARDS */
+
+  .gallery-grid > .gallery-card:nth-child(4),
+  .gallery-grid > .gallery-card:nth-child(5) {
+    grid-column: span 6;
+
+    height: 250px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .gallery-container {
+    width: calc(100% - 28px);
+  }
+
+
+  /* HERO */
+
+  .gallery-hero {
+    min-height: 350px;
+  }
+
+  .gallery-hero-content {
+    width: calc(100% - 30px);
+  }
+
+  .gallery-hero-content h1 {
+    font-size: 31px;
+  }
+
+
+  /* SHOWCASE */
+
+  .gallery-showcase {
+    padding: 50px 0 55px;
+  }
+
+  .gallery-heading {
+    margin-bottom: 35px;
+  }
+
+  .gallery-heading > span {
+    margin-bottom: 9px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.7px;
+  }
+
+  .gallery-heading h2 {
+    font-size: 28px;
+
+    line-height: 1.1;
+  }
+
+  .gallery-heading p {
+    width: 100%;
+
+    margin-top: 12px;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    line-height: 21px;
+  }
+
+
+  /* GRID */
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .gallery-card-small,
+  .gallery-card-large,
+  .gallery-card-wide {
+    grid-column: auto;
+
+    width: 100%;
+    height: 260px;
+  }
+
+
+  /* SPECIAL CARDS */
+
+  .gallery-grid > .gallery-card:nth-child(4),
+  .gallery-grid > .gallery-card:nth-child(5) {
+    grid-column: auto;
+
+    width: 100%;
+    height: 260px;
+  }
+
+
+  /* CTA */
+
+  .gallery-cta {
+    padding: 50px 0;
+  }
+
+  .gallery-cta-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .gallery-cta h2 {
+    font-size: 27px;
+  }
+}

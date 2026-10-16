@@ -1,0 +1,281 @@
+.admin-crud-page {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.admin-crud-card {
+  padding: 28px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+.admin-crud-heading {
+  margin-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.admin-crud-heading span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #ff6259;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.admin-crud-heading h2 {
+  margin: 0;
+
+  font-size: 24px;
+}
+
+.admin-crud-heading > strong {
+  min-width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 8px;
+
+  background: #101b34;
+  color: #ffffff;
+}
+
+.admin-crud-message {
+  margin-bottom: 20px;
+
+  padding: 12px 15px;
+
+  border-radius: 7px;
+
+  background: #ecfdf5;
+  color: #166534;
+
+  font-size: 13px;
+}
+
+.admin-crud-form {
+  display: grid;
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+.admin-crud-form > div {
+  min-width: 0;
+}
+
+.admin-crud-form .full {
+  grid-column: 1 / -1;
+}
+
+.admin-crud-form label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #374151;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.admin-crud-form input,
+.admin-crud-form textarea,
+.admin-crud-form select {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #111827;
+
+  font: inherit;
+}
+
+.admin-crud-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.admin-crud-form input:focus,
+.admin-crud-form textarea:focus,
+.admin-crud-form select:focus {
+  outline: none;
+
+  border-color: #ff6259;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(255, 98, 89, 0.12);
+}
+
+.admin-checkbox {
+  grid-column: 1 / -1;
+
+  display: flex !important;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.admin-checkbox input {
+  width: auto;
+}
+
+.admin-form-actions {
+  grid-column: 1 / -1;
+
+  display: flex;
+
+  gap: 10px;
+}
+
+.admin-primary-btn,
+.admin-secondary-btn {
+  min-height: 42px;
+
+  padding: 0 20px;
+
+  border: 0;
+  border-radius: 7px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.admin-primary-btn {
+  background: #ff6259;
+  color: #ffffff;
+}
+
+.admin-secondary-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.admin-table-wrap {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  padding: 13px 12px;
+
+  border-bottom:
+    1px solid #e5e7eb;
+
+  color: #64748b;
+
+  font-size: 10px;
+  letter-spacing: 1px;
+
+  text-align: left;
+}
+
+.admin-table td {
+  padding: 15px 12px;
+
+  border-bottom:
+    1px solid #f1f5f9;
+
+  color: #374151;
+
+  font-size: 12px;
+}
+
+.admin-table td strong {
+  display: block;
+
+  color: #111827;
+}
+
+.admin-table td small {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #94a3b8;
+}
+
+.status-active,
+.status-inactive {
+  display: inline-flex;
+
+  padding: 5px 8px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.status-active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-inactive {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.admin-row-actions {
+  display: flex;
+
+  gap: 7px;
+}
+
+.admin-row-actions button {
+  padding: 7px 10px;
+
+  border: 0;
+  border-radius: 5px;
+
+  background: #101b34;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.admin-row-actions button.delete {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+@media (max-width: 700px) {
+  .admin-crud-form {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-crud-form .full,
+  .admin-checkbox,
+  .admin-form-actions {
+    grid-column: auto;
+  }
+}
