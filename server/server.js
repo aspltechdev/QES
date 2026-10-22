@@ -329,42 +329,16 @@ app.use(
    SERVER
 ========================================================= */
 
-const PORT =
-  process.env.PORT || 5000;
 
+
+
+
+/* =========================================================
+   SERVER
+========================================================= */
+
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-
-  console.log(
-    `QES server running on http://localhost:${PORT}`
-  );
-
-  console.log(
-    `Uploads: http://localhost:${PORT}/uploads`
-  );
-
-  console.log(
-    `Products API: http://localhost:${PORT}/api/products`
-  );
-
-  console.log(
-    `Industries API: http://localhost:${PORT}/api/industries`
-  );
-
-  console.log(
-    `Gallery API: http://localhost:${PORT}/api/gallery`
-  );
-
-  console.log(
-    `Resources API: http://localhost:${PORT}/api/resources`
-  );
-
-  console.log(
-    `Contact API: POST http://localhost:${PORT}/api/contact`
-  );
-
-  console.log(
-    `Admin API: http://localhost:${PORT}/api/admin/content`
-  );
-
+  console.log(`QES server running on http://localhost:${PORT}`);
 });

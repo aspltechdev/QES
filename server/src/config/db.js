@@ -1,5 +1,9 @@
+const path = require("path");
 const { Pool } = require("pg");
-require("dotenv").config();
+
+require("dotenv").config({
+  path: path.resolve(__dirname, "../../.env"),
+});
 
 const pool = new Pool({
   host: process.env.DB_HOST,
@@ -9,8 +13,15 @@ const pool = new Pool({
   password: process.env.DB_PASSWORD,
 });
 
+console.log("Database configuration:", {
+  hostLoaded: Boolean(process.env.DB_HOST),
+  databaseLoaded: Boolean(process.env.DB_NAME),
+  userLoaded: Boolean(process.env.DB_USER),
+  passwordLoaded: Boolean(process.env.DB_PASSWORD),
+});
+
 pool.on("error", (err) => {
-  console.error("Unexpected PostgreSQL error:", err);
+  console.error("Unexpected PostgreSQL error:", err.message);
 });
 
 module.exports = pool;
