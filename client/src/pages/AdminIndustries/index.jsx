@@ -5,8 +5,7 @@ import {
 
 import "../AdminProducts/AdminProducts.css";
 
-const API =
-  "http://localhost:5000/api/admin/content";
+const API = `${import.meta.env.VITE_API_URL}/api/admin/content`;
 
 const emptyForm = {
   name: "",

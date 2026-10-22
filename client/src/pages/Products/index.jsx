@@ -12,8 +12,8 @@ import "./Products.css";
 import getImageUrl from "../../utils/imageUrl";
 
 
-const API =
-  "http://localhost:5000/api/products";
+const API = `${import.meta.env.VITE_API_URL}/api/products`;
+
 
 
 function ProductsPage() {

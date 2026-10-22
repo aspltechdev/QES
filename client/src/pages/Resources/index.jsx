@@ -15,12 +15,9 @@ import "./Resources.css";
    BACKEND
 ========================================================= */
 
-const BACKEND =
-  "http://localhost:5000";
+const BACKEND = import.meta.env.VITE_API_URL;
 
-const API =
-  `${BACKEND}/api/resources`;
-
+const API = `${BACKEND}/api/resources`;
 
 /* =========================================================
    EXISTING STATIC DOWNLOADS

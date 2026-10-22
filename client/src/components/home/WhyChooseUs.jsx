@@ -1,5 +1,5 @@
 import homepage3rdimage from "../../assets/homepage3rdimahe.png";
-
+import "./WhyChooseUs.css";
 import precisionIcon from "../../assets/a.png";
 import productRangeIcon from "../../assets/b.png";
 import reliableIcon from "../../assets/c.png";
@@ -35,15 +35,7 @@ const WhyChooseUs = () => {
   return (
     <section
       className="home-why"
-      style={{
-        backgroundImage: `
-          linear-gradient(
-            rgba(8, 12, 20, 0.58),
-            rgba(8, 12, 20, 0.58)
-          ),
-          url(${homepage3rdimage})
-        `,
-      }}
+     
     >
       <div className="home-why-overlay" />
 

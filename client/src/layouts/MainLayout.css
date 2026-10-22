@@ -1,0 +1,92 @@
+
+/* Main Layout */
+.main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-layout-content {
+  flex: 1;
+}
+
+/* Homepage CTA Section */
+.main-layout-cta {
+  width: 100%;
+  min-height: 280px;
+  background: linear-gradient(
+    90deg,
+    #f25b50 0%,
+    #ff7066 50%,
+    #f25b50 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.main-layout-cta-container {
+  width: min(900px, calc(100% - 40px));
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.main-layout-cta-container h2 {
+  margin: 0 0 14px;
+  color: #ffffff;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.main-layout-cta-container p {
+  max-width: 720px;
+  margin: 0 auto 26px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.main-layout-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 24px;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #f25b50;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.main-layout-cta-btn:hover {
+  background: #142b4a;
+  color: #ffffff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .main-layout-cta {
+    min-height: 250px;
+  }
+
+  .main-layout-cta-container {
+    padding: 45px 10px;
+  }
+
+  .main-layout-cta-container h2 {
+    font-size: clamp(27px, 6vw, 36px);
+    line-height: 1.2;
+  }
+
+  .main-layout-cta-container p {
+    font-size: 13px;
+  }
+}

@@ -125,8 +125,7 @@ const existingGalleryItems = [
 ];
 
 
-const API =
-  "http://localhost:5000/api/gallery";
+const API = `${import.meta.env.VITE_API_URL}/api/gallery`;
 
 
 function GalleryPage() {

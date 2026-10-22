@@ -1,0 +1,12 @@
+.home-quote {
+  background-image:
+    linear-gradient(
+      rgba(7, 12, 20, 0.45),
+      rgba(7, 12, 20, 0.45)
+    ),
+    url("../../assets/homepage7thimage.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

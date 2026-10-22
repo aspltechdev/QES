@@ -5,11 +5,9 @@ import {
 
 import "./AdminProducts.css";
 
-const API =
-  "http://localhost:5000/api/admin/content";
+const API = `${import.meta.env.VITE_API_URL}/api/admin/content`;
 
-const SERVER =
-  "http://localhost:5000";
+const SERVER = import.meta.env.VITE_API_URL;
 
 
 const productSections = [

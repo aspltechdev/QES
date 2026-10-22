@@ -17,8 +17,8 @@ import getImageUrl from "../../utils/imageUrl";
 import "./Industries.css";
 
 
-const API =
-  "http://localhost:5000/api/industries";
+const API = `${import.meta.env.VITE_API_URL}/api/industries`;
+
 
 
 function IndustriesPage() {

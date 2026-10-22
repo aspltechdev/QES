@@ -48,8 +48,8 @@ import image38 from "../../assets/38.png";
 import "./DatabaseProductDetails.css";
 
 
-const API =
-  "http://localhost:5000/api/products";
+
+  const API = `${import.meta.env.VITE_API_URL}/api/products`;
 
 
 /* =========================================================

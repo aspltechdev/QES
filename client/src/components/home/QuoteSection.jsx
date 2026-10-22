@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./QuoteSection.css";
 import homepage7thimage from "../../assets/homepage7thimage.png";
 
 
@@ -15,18 +15,6 @@ const QuoteSection = () => {
   return (
     <section
       className="home-quote"
-      style={{
-        backgroundImage: `
-          linear-gradient(
-            rgba(7, 12, 20, 0.45),
-            rgba(7, 12, 20, 0.45)
-          ),
-          url(${homepage7thimage})
-        `,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
     >
       <div className="home-quote-overlay" />
 
